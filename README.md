@@ -1,1 +1,2 @@
-# codewars
+# Codewars
+Solutions to challenges.
