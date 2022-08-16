@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Complementary DNA</title>
+</head>
+<body>
+<script>
+  function DNAStrand(dna){
+    let result = '', 
+        i = 0;  
+    for (i; i<dna.length; i++){
+      if (dna[i] == 'A') {
+          result += 'T';
+        } else if (dna[i] == 'T'){
+          result += 'A';
+        } else if (dna[i] == 'C') {
+          result += 'G';
+        } else if (dna[i] == 'G') {
+          result += 'C'
+        }
+    }
+    return result; 
+  }
+</script>
+
+<h1>Complementary DNA</h1>
+<h2>Description:</h2>
+  
+<p>If you want to know more: <a href="http://en.wikipedia.org/wiki/DNA" data-turbolinks="false" target="_blank">http://en.wikipedia.org/wiki/DNA</a></p>
+<p>In DNA strings, symbols "A" and "T" are complements of each other, as "C" and "G". 
+Your function receives one side of the DNA (string, except for Haskell); you need to return the other complementary side. DNA strand is never empty or there is no DNA at all (again, except for Haskell).</p>
+<p>Deoxyribonucleic acid (DNA) is a chemical found in the nucleus of cells and carries the "instructions" for the development and functioning of living organisms.</p>
+<p>More similar exercise are found here: <a href="http://rosalind.info/problems/list-view/" data-turbolinks="false" target="_blank">http://rosalind.info/problems/list-view/</a> (source)</p>
+
+<p>Example: (<strong>input --&gt; output</strong>)</p>
+<pre>
+  <code>
+  "ATTGC" --&gt; "TAACG"
+  "GTAT" --&gt; "CATA"
+  </code>
+</pre>
+  
+</body>
+</html>
